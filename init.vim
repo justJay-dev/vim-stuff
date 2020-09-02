@@ -15,7 +15,7 @@ set number
 set ignorecase
 set smartcase
 set number relativenumber
-nnoremap <silent> <C-k><C-B> :NerdTreeToggle<CR>
+nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
 nnoremap <C-p> :GFiles<CR>
 augroup nerdtree_open
 	autocmd!
