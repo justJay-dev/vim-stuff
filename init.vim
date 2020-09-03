@@ -11,6 +11,9 @@ call plug#end()
 colorscheme codedark
 syntax on
 syntax enable
+set nowrap
+set nobackup
+set noswapfile
 set number
 set ignorecase
 set smartcase
