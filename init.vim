@@ -21,6 +21,8 @@ set smartcase
 set number relativenumber
 nnoremap <silent> <C-k><C-B> :NERDTreeToggle<CR>
 nnoremap <C-p> :GFiles<CR>
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
 augroup nerdtree_open
 	autocmd!
 	autocmd VimEnter * NERDTree | wincmd p
