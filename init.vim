@@ -2,7 +2,6 @@ call plug#begin('~/AppData/Local/nvim/plugged')
 Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree' |
                 \ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'sheerun/vim-polyglot'
@@ -10,7 +9,9 @@ Plug 'junegunn/fzf', { 'do':{ -> fxf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/nvim-typescript', {'do': './install.sh'}
+" For async completion
 Plug 'Shougo/deoplete.nvim'
+" For Denite features
 Plug 'Shougo/denite.nvim'
 call plug#end()
 colorscheme codedark
