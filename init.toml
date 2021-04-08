@@ -1,30 +1,52 @@
-#=============================================================================
-# dark_powered.toml --- dark powered configuration example for SpaceVim
-# Copyright (c) 2016-2020 Wang Shidong & Contributors
-# Author: Wang Shidong < wsdjeg at 163.com >
-# URL: https://spacevim.org
-# License: GPLv3
-#=============================================================================
-
 # All SpaceVim option below [option] section
 [options]
     # set spacevim theme. by default colorscheme layer is not loaded,
     # if you want to use more colorscheme, please load the colorscheme
     # layer
-    colorscheme = "SpaceVim"
-    colorscheme_bg = "dark"
+    colorscheme = "ayu"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "curve"
-    statusline_iseparator = "curve"
+    statusline_separator = "fire"
+    statusline_iseparator = "fire"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
     enable_statusline_mode = false
     filemanager = 'nerdtree'
     filetree_direction = 'left'
+    bootstrap_before = 'bootstrap#before'
+    bootstrap_after= 'bootstrap#before'
+
+[[layers]]
+name='core'
+filetree_show_hidden= 'true'
+
+[[layers]]
+name = 'default'
+
+[[layers]]
+name='ui'
+enable_scrollbar= true
+
+[[layers]]
+name='core#banner'
+
+[[layers]]
+name='github'
+
+[[layers]]
+name='git'
+
+[[layers]]
+name='VersionControl'
+
+[[layers]]
+name='denite'
+
+[[layers]]
+name='colorscheme'
 
 # Enable autocomplete layer
 [[layers]]
@@ -40,6 +62,9 @@ default_height = 30
 [[layers]]
 name = 'lang#typescript'
 
+[[layers]]
+name = 'lang#javascript'
+
 # disable nonsense
 [[layers]]
 name = 'checkers'
@@ -53,4 +78,18 @@ merged = false
 # mf prettier
 [[custom_plugins]]
 repo='prettier/vim-prettier'
+merged = false
+
+# reeeeeeeact
+[[custom_plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+merged = false
+
+[[custom_plugins]]
+repo = 'ryanoasis/vim-devicons'
+merged = false
+
+
+[[custom_plugins]]
+repo = 'ayu-theme/ayu-vim'
 merged = false
